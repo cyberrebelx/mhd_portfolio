@@ -1,0 +1,58 @@
+<!-- Main Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="img-container">
+  <a class="navbar-brand" href="/">
+    <img src="/Assets/images/mhd.png"  alt="logo" />
+  </a>
+</div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto">
+      
+      <li class="nav-item">
+      <% if (title == "Home"){ %>
+        <a class="nav-link active" href="/home"><i class="fas fa-lg fa-laptop-house"></i> Home </a>
+      <% } else  { %>
+        <a class="nav-link" href="/home"><i class="fas fa-lg fa-laptop-house"></i> Home </a>
+      <% } %>
+      </li>
+
+      <li class="nav-item"></li>
+      <% if (title == "About Me") { %>
+        <a class="nav-link active" href="/about"><i class="fas fa-info-circle"></i> About Me</a>
+      <% } else  { %>
+        <a class="nav-link" href="/about"><i class="fas fa-info-circle"></i> About Me</a>
+      <% } %>
+      </li>
+
+     <li class="nav-item ">
+      <% if (title == "Projects") { %>
+        <a class="nav-link active" href="/projects"><i class="fab fa-elementor"></i> Projects </a>
+      <% } else  { %>
+        <a class="nav-link" href="/projects"><i class="fab fa-elementor"></i> Projects </a>
+      <% } %>                               
+      </li>
+
+      <li class="nav-item"></li>
+      <% if (title == "Services") { %>
+        <a class="nav-link active" href="/services"><i class="fas fa-cogs"></i> Services </a>
+      <% } else  { %>
+        <a class="nav-link" href="/services"><i class="fas fa-cogs"></i> Services </a>
+      <% } %>
+      </li>
+
+
+      <li class="nav-item">
+      <% if (title == "Contact") { %>
+        <a class="nav-link active" href="/contact"><i class="fas fa-mobile-alt"></i> Contact </a>
+      <% } else  { %>
+        <a class="nav-link" href="/contact"><i class="fas fa-mobile-alt"></i> Contact </a>
+      <% } %>
+      </li>
+    </ul>
+  </div>
+</nav>
+<body>
