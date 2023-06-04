@@ -1,17 +1,29 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
 <%- include partials/header.ejs %>
+  </head>
+  <body>
+    <!-- File name: index.ejs
+  Student’s Name: Muhammad Abdulsalam 
+  StudentID: 301273806
+   Date: June 3, 2023 -->
 <%- include partials/main_nav.ejs %>
-<main>
+<main class="home-main">
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Welcome to my <%= title %> page</h1>
-      <section class="container animated-section">
+      <section class="container animated-section" >
         <div class="row">
           <div class="col-lg-8 offset-lg-2 text-center">
             <h2 class="animated-heading">My Mission</h2>
-            <p class="animated-text">I strive to create stunning web solutions that leave a lasting impression. My goal is to combine creativity, functionality, and user experience to deliver outstanding results.</p>
+            <p class="animated-text">To provide innovative and tailored web development solutions, leveraging cutting-edge technologies and a strong attention to detail.
+               As a web developer just starting out, my mission is to deliver high-quality, responsive websites that exceed client 
+               expectations. By constantly expanding my skill set and staying up-to-date with the latest industry trends, I aim to
+                create engaging user experiences and contribute to the growth and success of businesses and individuals through the
+                 power of web development. With a commitment to professionalism, collaboration, and continuous improvement, I strive 
+                 to build long-lasting relationships with clients based on trust, integrity, and exceptional service.</p>
           </div>
         </div>
       </section>
@@ -21,8 +33,10 @@
   </div>
 </main>
 
-
+<footer>
 <%- include partials/footer.ejs %>
+</footer>
+</body>
 </html>
 
 

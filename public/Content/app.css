@@ -1,13 +1,27 @@
+body {
+  position: relative;
+  min-height: 100vh;
+}
 
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 .navbar-brand img {
-  width: 150px;
+  width: 100px;
   height: 100px;
-  object-fit: cover;
+  margin-left: 20px;
 }
 
 section.container {
   background-color: #e9f2fd;
   padding: 20px;
+}
+
+#contact {
+  background-color: #e9f2fd;
 }
 
 .animated-section {
@@ -55,8 +69,67 @@ section.container {
   }
 }
 
-.services-container {
-  margin-top: 50px; /* Adjust the margin value as needed */
+/* Custom CSS for the card deck */
+.card-deck {
+  margin-bottom: 100px;
+  margin: auto;
+  width: 40%;
   display: flex;
   flex-direction: column;
+  align-content: space-between;
 }
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.card:last-of-type {
+margin-bottom: 180px;
+}
+
+.img-fluid {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.img-fluid:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card-body{
+  background-color: #e9f2fd;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #888;
+}
+
+/* Media query for responsive card columns */
+@media (max-width: 767px) {
+  .card-deck {
+    flex-direction: column;
+  }
+  
+  .card {
+    margin-bottom: 30px;
+  }
+}
+
+
+label{
+  font-weight: bold;
+}
+
+.home-main{
+  height: max-content;
+}
+
+

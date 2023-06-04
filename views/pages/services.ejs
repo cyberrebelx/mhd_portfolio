@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
 <%- include ../partials/header.ejs %>
+</head>
+<!-- File name: services.ejs
+  Student’s Name: Muhammad Abdulsalam 
+  StudentID:301273806
+   Date: June 3, 2023 -->
+<body>
 <%- include ../partials/main_nav.ejs %>
+<main>
+<div class="container">
+<div class="card-deck">
+  <div class="card">
+    <img class="img-fluid" src="Assets/images/programming.jpg" alt="Programming">
+    <div class="card-body">
+      <h5 class="card-title">General Programming</h5>
+      <p class="card-text">Offering expertise in various programming languages and technologies.</p>
+      <a href="/contact" class="btn btn-primary">Consult Me</a>
+    </div>
+  </div>
+  <div class="card">
+    <img class="img-fluid" src="Assets/images/web_dev.jpg" alt="Web Development">
+    <div class="card-body">
+      <h5 class="card-title">Web Development</h5>
+      <p class="card-text">Building responsive and user-friendly websites using the latest web technologies.</p>
+      <a href="/contact" class="btn btn-primary">Hire me to design your website</a>
+    </div>
+  </div>
 
-<div class="container services-container">
-        <div class="service-block">
-          <img src="Assets/images/programming.jpg" alt="General Programming">
-          <h3>General Programming</h3>
-          <p>Offering expertise in various programming languages and technologies.</p>
-        </div>
-      
-      
-        <div class="service-block">
-          <img src="Assets/images/web_dev.jpg" alt="Web Development">
-          <h3>Web Development</h3>
-          <p>Building responsive and user-friendly websites using the latest web technologies.</p>
-        </div>
-    
-    
-        <div class="service-block">
-          <img src="Assets/images/mobile_dev.jpg" alt="Mobile Apps">
-          <h3>Mobile Apps</h3>
-          <p>Designing and developing mobile applications for iOS and Android platforms.</p>
-        </div>
+  <div class="card last">
+    <img class="img-fluid" src="Assets/images/mobile_dev.jpg" alt="Mobile Apps">
+    <div class="card-body">
+      <h5 class="card-title">Mobile Apps</h5>
+      <p class="card-text">Designing and developing mobile applications for iOS and Android platforms.</p>
+      <a href="/contact" class="btn btn-primary">Hire me to develop your app</a>
+    </div>
+  </div>
+</div>
+</div>
+</main>
 
-
-      </div>
+<footer class="footer bg-dark text-light py-3">
 <%- include ../partials/footer.ejs %>
+</footer>
+<script src="/scripts/app.js"></script>
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
