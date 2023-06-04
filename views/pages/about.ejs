@@ -1,20 +1,32 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
 <%- include ../partials/header.ejs %>
+</head>
+<!-- File name: about.ejs
+  Student’s Name: Muhammad Abdulsalam 
+  StudentID:301273806
+   Date: June 3, 2023 -->
+<body>
 <%- include ../partials/main_nav.ejs %>
 <main>
-  <div class="jumbotron jumbotron-fluid">
+  <div class="jumbotron jumbotron-fluid" style="
+  min-height: 100vh;">
     <div class="container">
       <h1 class="display-4">Welcome to my <%= title %> page</h1>
-  
     </div>
-  </div>
-</main>
-<div class="container ">
-  <div class="jumbotron text-center text-white" style="background-color: #d6e4ff; padding: auto;">
-    <h1 class="display-4 animated-heading">About Me</h1>
-    <p class="animated-text">Hello, my name is Muhammad Abdulsalam and I'm a web developer passionate about creating beautiful and functional websites.</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="Assets/images/me.png" alt="Profile Photo" class="img-fluid rounded" height="350px" width="200px">
+    </div>
+    <div class="col-md-8">
+      <div class="jumbotron text-center text-white" style="background-color: #d6e4ff; padding: auto;">
+        <h1 class="display-4 animated-heading">About Me</h1>
+        <p class="animated-text">Hello, my name is Muhammad Abdulsalam, and I'm a web developer passionate about creating beautiful and functional websites.</p>
+      </div>
+    </div>
   </div>
   
   <div class="row">
@@ -44,12 +56,23 @@
       <p>Diploma, Software Eng. Technician- Centennial College 2023</p>
     </div>
   </div>
+  <div class="container">
+    <a href="Assets/mhd_resume.pdf" class="btn btn-primary">View My Complete Resume</a>
+    </div>
 </div>
+</div>
+</main>
 
-
+<script src="/scripts/app.js"></script>
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<footer class="footer bg-dark text-light py-3">  
 <%- include ../partials/footer.ejs %>
-</html>
+</footer>
 
+
+</body>
+</html>
 
 
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<%- include ../partials/header.ejs %>
+</head>
+
+<body>
+    <!-- File name: projects.ejs
+  Student’s Name: Muhammad Abdulsalam 
+  StudentID:301273806
+   Date: June 3, 2023 -->
+<%- include ../partials/main_nav.ejs %>
+<div class="container mt-5">
+    <h1 class="text-center mb-5">My Projects</h1>
+
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="Assets/images/smasher.png" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Bug Smasher Canva Game</h5>
+            <p class="card-text">Bug Smasher is an exciting canvas game that challenges players to smash as many bugs as they 
+                can within a limited time. Armed with a virtual bug bat, players must quickly and accurately strike the animated 
+                bugs crawling across the screen, earning points for each successful hit. With increasing difficulty, players
+                 must test their reflexes and hand-eye coordination to achieve the highest score possible. </p>
+                 <a href="/contact" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="Assets/images/node_js.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Portfolio Website</h5>
+            <p class="card-text">I am very excited about this portfolio website, as it represents one of my major projects.
+                 Built using Express.js and EJS, this website showcases my skills, experience, and achievements as a web 
+                 developer. I have poured my dedication and expertise into designing and developing this platform to create 
+                 a professional and visually captivating experience for visitors. </p>
+                 <a href="/contact" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="Assets/images/js_gallery.png" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Javascript Image Gallery</h5>
+            <p class="card-text">The JavaScript Image Gallery is a dynamic and user-friendly web application that enables users 
+                to explore and interact with a collection of images. With this gallery, users have the ability to add their 
+                favorite images to a dedicated "Favorites" tab and easily remove them when desired. By clicking on an image, 
+                users can instantly expand it to its full size, providing a closer and more detailed view.</p>
+                <a href="/contact" class="btn btn-primary">View Project</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer bg-dark text-light py-3">
+    <%- include ../partials/footer.ejs %>
+      </footer>
+      <script src="/scripts/app.js"></script>
+      <script src="/jquery/dist/jquery.min.js"></script>
+      <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+    </html>
