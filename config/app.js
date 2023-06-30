@@ -3,11 +3,22 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+let session = require('express-session');
+let flash = require('connect-flash');
+let passport = require('passport');
+
 
 const indexRouter = require('../routes/index');
 const usersRouter = require('../routes/users');
+const inventoryRouter = require('../routes/inventory');
+const contactRouter = require('../routes/contacts');
 
 const app = express();
+app.use(session({
+  saveUninitialized: true,
+  resave: true,
+  secret: "sessionSecret"
+}));
 
 // view engine setup
 app.set('views', path.join(__dirname, '../views'));
@@ -23,8 +34,14 @@ app.use(express.static(path.join(__dirname, '../node_modules')));
 // app.use(express.static('public'));
 // app.use(express.static('node_modules'));
 
+// Sets up passport
+app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/contacts', contactRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

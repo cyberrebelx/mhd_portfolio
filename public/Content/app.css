@@ -12,8 +12,9 @@ footer {
 .navbar-brand img {
   width: 100px;
   height: 100px;
-  margin-left: 20px;
+  
 }
+
 
 section.container {
   background-color: #e9f2fd;
@@ -128,8 +129,10 @@ label{
   font-weight: bold;
 }
 
-.home-main{
-  height: max-content;
-}
 
+
+.table-responsive {
+  margin-bottom: 300px;
+  overflow-y: auto;
+}
 
