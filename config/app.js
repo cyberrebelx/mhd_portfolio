@@ -10,7 +10,6 @@ let passport = require('passport');
 
 const indexRouter = require('../routes/index');
 const usersRouter = require('../routes/users');
-const inventoryRouter = require('../routes/inventory');
 const contactRouter = require('../routes/contacts');
 
 const app = express();
