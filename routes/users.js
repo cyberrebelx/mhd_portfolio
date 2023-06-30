@@ -1,17 +1,167 @@
-let express = require('express');
-let router = express.Router();
-let usersController = require('../controllers/user');
-let passport = require('passport');
+const  express = require('express');
+const  router = express.Router();
 
-// Routes for sign-up
-router.get('/signup', usersController.renderSignup);
-router.post('/signup', usersController.signup);
-
-// Routes for sign-in
-router.get('/signin', usersController.renderSignin);
-router.post('/signin', usersController.signin);
-
-// Route for sign-out
-router.get('/signout', usersController.signout);
+/* GET users listing. */
+router.get('/', function(req, res, next) {
+  res.send('respond with a resource');
+});
 
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
