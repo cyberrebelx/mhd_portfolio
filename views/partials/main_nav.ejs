@@ -1,46 +1,15 @@
-
 <!-- Main Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-  <ul class="navbar-nav ">
-    <li >
   <div class="img-container">
-   <a class="navbar-brand" href="/">
+  <a class="navbar-brand" href="/">
     <img src="/Assets/images/mhd.png"  alt="logo" />
-    </a>
-   </div>
-</li>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-  <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="collapsibleNavbar">
+  </a>
+</div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-  
-
-<li class="nav-item dropdown">
-  <% if (title == "Business Contact List" || title == "Add a new Contact") { %>
-    <a class="nav-link active dropdown-toggle btn btn-secondary" href="#" role="button" data-bs-toggle="dropdown"><i class="fa fa-address-book"></i>Business Contacts</a>
-  <% } else { %>
-    <a class="nav-link dropdown-toggle btn btn-secondary" href="#" role="button" data-bs-toggle="dropdown"><i class="fa fa-address-book"></i> Contacts</a>
-  <% } %>
-
-  <ul class="dropdown-menu" >
-    <li><a class="dropdown-item" href="/contacts/list"><i class="fa fa-list"></i> Contacts List</a></li>
-    <li><a class="dropdown-item" href="/contacts/add"><i class="fas fa-plus-circle"></i> Add a new Contact</a></li>
-  </ul>
-</li>       
-
-
-<li id="sign-in_icon">  
-  <% if (typeof userName == 'string' && userName) { %>
-    <a class="nav-link" href="/users/signout" onclick="return confirm('Are you sure?')"><i class="fa fa-door-open"></i> Sign-Out (<%= userName %>)</a>
-  <% } else { %>
-    <a class="nav-link" href="/users/signin"><i class="fa fa-door-closed"></i> Sign-in</a>
-  <% } %>            
-</li> 
-</ul>
-
- 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ms-auto">
       
       <li class="nav-item">
@@ -85,11 +54,4 @@
       </li>
     </ul>
   </div>
-</div>
-  
 </nav>
-
-
-
-
-
