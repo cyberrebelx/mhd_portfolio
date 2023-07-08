@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<%- include ../partials/header.ejs %>
+</head>
+
+<body>
+    <!-- File name: projects.ejs
+  Student’s Name: Muhammad Abdulsalam 
+  StudentID:301273806
+   Date: June 3, 2023 -->
+<%- include ../partials/main_nav.ejs %>
+
+<!-- Content for the Details page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+                <div class="form-group">
+                    <label for="makeTextField">Name:</label>
+                    <strong><%= contact.name %></strong>
+                </div>
+                <div class="form-group">
+                    <label for="modelTextField">Number:</label>
+                    <strong><%= contact.phone_no %></strong>
+                </div>
+                <div class="form-group">
+                    <label for="yearTextField">Email:</label>
+                    <strong><%= contact.email %></strong>                    
+                </div>
+               
+                <br />
+                
+                <a href="/contacts/list" class="btn btn-warning">
+                    <i class="fas fa-undo"></i> 
+                    Cancel
+                </a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+<footer class="footer bg-dark text-light py-3">  
+    <%- include ../partials/footer.ejs %>
+    </footer>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="/bootstrap/dist/js/bootstrap.min.js"></script> 
+    The code above I commented so I dont forget the change I made to get the navbar dropdown toggle to work.
+    I was using the bootstrap file path above, but It only worked when I changed to the one below
+    -->
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    </body>
+    </html>

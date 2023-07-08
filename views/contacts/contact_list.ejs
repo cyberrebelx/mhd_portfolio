@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<%- include ../partials/header.ejs %>
+</head>
+
+<body>
+    <!-- File name: projects.ejs
+  Student’s Name: Muhammad Abdulsalam 
+  StudentID:301273806
+   Date: June 3, 2023 -->
+<%- include ../partials/main_nav.ejs %>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+        <h1><%= title %></h1>
+        <br>
+        <div>
+            
+            <a href="/contacts/add" class="btn btn-primary align-self-end" role="button">
+                <i class="fas fa-plus-circle"></i> 
+                Add a new Contact
+            </a>                
+        </div>
+        <br>
+        
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <!-- Header Row-->
+                <tr>
+                   
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Phone No</th>
+                    <th class="text-center">E-mail Address</th>
+                    <th class="text-center" colspan="3">Actions</th>
+                </tr>
+
+                <!-- Repeatable Template Row -->
+
+                <% for(let i = 0; i < ContactsList.length; i++) { %>
+                    <tr>
+                        <td class="text-center"><%= ContactsList[i].name %></td>
+                        <td class="text-center"><%= ContactsList[i].phone_no %></td>
+                        <td class="text-center"><%= ContactsList[i].email %></td>
+                                    
+                        <td class="text-center">
+                            <a href="/contacts/details/<%= ContactsList[i]._id %>" class="btn btn-success btn-sm"> 
+                            <i class="fas fa-info"></i> </a>
+                        </td>
+                        <td class="text-center">
+                          
+                            <a href="/contacts/edit/<%= ContactsList[i]._id %>" class="btn btn-primary btn-sm">
+                            <i class="fas fa-pencil-alt"></i></a>
+                        </td>
+                        <td class="text-center">
+                            <!-- --------------------------- -->
+                            <!-- Fix the DELETE button below -->
+                            <!-- --------------------------- -->
+                            <a href="/contacts/delete/<%= ContactsList[i]._id %>" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+</div>
+  <footer class="footer bg-dark text-light py-3">  
+    <%- include ../partials/footer.ejs %>
+    </footer>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="/bootstrap/dist/js/bootstrap.min.js"></script> 
+    The code above I commented so I dont forget the change I made to get the navbar dropdown toggle to work.
+    I was using the bootstrap file path above, but It only worked when I changed to the one below
+    -->
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var getTitle = "<%= title %>";
+    </script>
+    <script src="/scripts/appclient.js"></script> 
+    </body>
+    </html>
