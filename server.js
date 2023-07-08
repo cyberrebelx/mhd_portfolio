@@ -4,14 +4,21 @@
  * Module dependencies.
  */
 
+
+const configDB = require('./config/contacts_db');
+//const {default: mongoose} = require('mongoose');
+
+
 const app = require('./config/app');
 const debug = require('debug')('mhd-porfolio:server');
 const http = require('http');
+const configurePassport = require('./config/passport');
 
 /**
  * Get port from environment and store in Express.
  */
 
+const db = configDB();
 const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
@@ -24,7 +31,7 @@ const server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
-
+const passport = configurePassport();
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
