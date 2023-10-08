@@ -18,9 +18,13 @@
     "express-session": "^1.17.3",
     "http-errors": "~1.6.3",
     "jquery": "^3.7.0",
+<<<<<<< Updated upstream
     "mongoose": "^7.2.2",
     "morgan": "~1.9.1",
     "passport": "^0.6.0",
+=======
+    "morgan": "~1.9.1",
+>>>>>>> Stashed changes
     "passport-local": "^1.0.0"
   },
   "description": "My portfolio website",
