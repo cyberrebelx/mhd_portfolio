@@ -6,7 +6,7 @@ module.exports.home = (function(req, res, next) {
 
   // module.exports.about = (function(req, res, next) {
     
-  //   res.render('index', { title: 'About', userName: req.user ? req.user.username : ''});
+  //   res.render('pages/about', { title: 'About', userName: req.user ? req.user.username : ''});
   //   console.log('===>From index controller about')
   // });
  
